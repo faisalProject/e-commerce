@@ -1,7 +1,7 @@
 /* navbar */
 nav {
     display: flex;
-    border-bottom: .1px solid rgba(204, 204, 204, 1);
+    border-bottom: .1px solid #ced4da;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,11 +9,12 @@ nav {
 }
 
 nav > .container {
-    height: 50px;
+    height: 55px;
     /* border: 1px solid #333; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 nav > .container > img {
@@ -51,13 +52,13 @@ nav > .container > .right > .button-container {
 
 nav > .container > .right > .button-container > .btn-primary {
     margin: 0 !important;
-    min-height: 30px !important;
-    min-width: 50px;
+    min-height: 35px !important;
+    min-width: 90px;
     padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 nav > .container > .right > .button-container > .btn-primary:nth-child(1) {
@@ -81,5 +82,135 @@ nav > .container > .right > .button-container > .btn-primary:nth-child(2) {
 }
 
 nav > .container > .right > .button-container > .btn-primary:nth-child(2):hover {
-    background-color: #09223f;
+    background-color: #071b31;
+}
+
+nav > .container > .right > .anchor > .bi-cart-fill {
+    font-size: 18px;
+    color: #0A2647;
+}
+
+nav > .container > .right > .anchor:nth-child(2) {
+    text-decoration: none;
+    color: #0A2647;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+nav > .container > .right > .search {
+    width: 250px;
+    display: flex;
+}
+
+nav > .container > .right > .search > input {
+    flex: 1;
+    height: 35px;
+    border-radius: 3px 0 0 3px;
+}
+
+nav > .container > .right > .search > input::placeholder {
+    font-size: 14px;
+}
+
+nav > .container > .right > .search > .btn-primary {
+    width: 35px;
+    height: 35px;
+    border-radius: 0 3px 3px 0;
+    background-color: #0A2647;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0A2647;
+}
+
+nav > .container > .right > .search > .btn-primary:hover {
+    background-color: #071b31;
+}
+
+nav > .container > .right > .search > .btn-primary > .bi-search {
+    color: #fff;
+    font-size: 14px;
+}
+
+/* menu */
+.menu-contents {
+    position: fixed;
+    top: 56px;
+    left: -100vw;
+    bottom: 0;
+    min-width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ced4da;
+    transition: 1s;
+    display: flex;
+    padding: 20px;
+}
+
+.menu-contents.active {
+    left: 0;
+}
+
+.menu-contents > .container {
+    flex: 1;
+    /* border: 1px solid #333; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 !important;
+    list-style: none;
+}
+
+.menu-contents > .container > li {
+    display: flex;
+    /* border: 1px solid #333; */
+    align-items: center;
+}
+
+.menu-contents > .container > li.title {
+    margin: 0;
+    color: #0A2647;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.menu-contents > .container > li.title {
+    margin-bottom: 5px;
+}
+
+.menu-contents > .container > li.title:not(:first-child) {
+    margin-top: 10px;
+}
+
+.menu-contents > .container > li > .anchor {
+    display: flex;
+    gap: 10px;
+    /* border: 1px solid #333; */
+    align-items: center;
+}
+
+.menu-contents > .container > li > .anchor > .bi-journal-text,
+.menu-contents > .container > li > .anchor > .bi-heart,
+.menu-contents > .container > li > .anchor > .bi-star,
+.menu-contents > .container > li > .anchor > .bi-shop,
+.menu-contents > .container > li > .anchor > .bi-person-x,
+.menu-contents > .container > li > .anchor > .bi-question-circle,
+.menu-contents > .container > li > .anchor > .bi-qr-code-scan,
+.menu-contents > .container > li > .anchor {
+    color: #0A2647;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 !important;
+}
+
+.menu-contents > .container > li > .anchor {
+    font-size: 14px;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    nav > .container > .right > .button-container {
+        display: none;
+    }
 }
