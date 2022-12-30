@@ -157,7 +157,6 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
 
 .menu-contents.active {
     left: 0;
-    transition-delay: .5s;
 }
 
 .menu-contents > .container {
@@ -287,6 +286,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     /* border: 1px solid blue; */
     display: flex;
     margin: 0 !important;
+    transition: 1s;
 }
 
 .carousel-contents > .slider > .slide > img {
