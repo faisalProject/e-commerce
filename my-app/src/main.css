@@ -28,7 +28,10 @@ nav > .container > img {
 nav > .container > .right {
     display: flex;
     gap: 20px;
+    /* border: 1px solid red; */
     align-items: center;
+    flex: 1;
+    justify-content: right;
 }
 
 nav > .container > .right > .hamburger {
@@ -110,6 +113,7 @@ nav > .container > .right > .search > input {
     flex: 1;
     height: 35px;
     border-radius: 3px 0 0 3px;
+    box-shadow: none;
 }
 
 nav > .container > .right > .search > input::placeholder {
@@ -153,6 +157,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
 
 .menu-contents.active {
     left: 0;
+    transition-delay: .5s;
 }
 
 .menu-contents > .container {
@@ -260,10 +265,34 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
 .carousel-contents {
     margin-top: 65px;
     min-height: 200px;
-    border: 1px solid #ced4da;
-    border-radius: 3px;
-    padding: 0 !important;
+    /* border: 1px solid #ced4da; */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-contents > .slider {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-contents > .slider > .slide {
+    min-width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    margin: 0 !important;
+}
+
+.carousel-contents > .slider > .slide > img {
+    width: 100%;
+    margin: 0 !important;
+    border-radius: 3px;
 }
 
 /* responsive */
@@ -291,5 +320,14 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     .menu-contents > .container > li:nth-child(7),
     .menu-contents > .container > li:nth-child(8) {
         display: flex;
+    }
+
+    .carousel-contents {
+        padding: 0 !important;
+        margin-top: 55px;
+    }
+
+    .carousel-contents > .slider > .slide > img {
+        border-radius: 0;
     }
 }
