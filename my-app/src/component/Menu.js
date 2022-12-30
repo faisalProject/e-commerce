@@ -4,6 +4,10 @@ const Menu = () => {
     return(
         <div className="menu-contents">
             <ul className="container">
+                <li>
+                    <button type="submit" className="btn btn-primary">Masuk</button>
+                    <button type="submit" className="btn btn-primary">Daftar</button>
+                </li>
                 <li className="title">Aktivitas Saya</li>
                 <li>
                     <Link to='/' className="anchor">
@@ -27,6 +31,18 @@ const Menu = () => {
                     <Link to='/' className="anchor">
                         <i className="bi bi-shop"></i>
                         Toko Favorit
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/' className="anchor">
+                        <i className="bi bi-bag-dash"></i>
+                        Kategori
+                    </Link>
+                </li>
+                <li>
+                    <Link to='/' className="anchor">
+                        <i className="bi bi-cart"></i>
+                        Keranjang Belanja
                     </Link>
                 </li>
                 <li className="title">Pusat Bantuan</li>
