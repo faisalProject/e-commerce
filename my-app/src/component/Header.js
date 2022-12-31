@@ -5,6 +5,11 @@ const menuActive = () => {
     document.getElementsByClassName('menu-contents')[0].classList.toggle('active')
 }
 
+const signinPopupActive = () => {
+    document.getElementsByClassName('signin-page-contents')[0].classList.add('active');
+    document.querySelector('body').classList.add('active');
+}
+
 const Header = () => {
     return(
         <nav>
@@ -22,7 +27,7 @@ const Header = () => {
                         <i className="bi bi-cart-fill"></i>
                     </Link>
                     <div className="button-container">
-                        <button type="submit" className="btn btn-primary">Masuk</button>
+                        <button type="submit" className="btn btn-primary" onClick={signinPopupActive}>Masuk</button>
                         <button type="submit" className="btn btn-primary">Daftar</button>
                     </div>
                     <div className="hamburger" onClick={menuActive}>

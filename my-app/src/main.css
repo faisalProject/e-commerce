@@ -2,6 +2,10 @@
     background-color: rgba(249, 249, 249, .4);
 }
 
+body.active {
+    overflow: hidden;
+}
+
 /* navbar */
 nav {
     display: flex;
@@ -93,7 +97,7 @@ nav > .container > .right > .button-container > .btn-primary:nth-child(2) {
 
 nav > .container > .right > .button-container > .btn-primary:nth-child(2):hover,
 .menu-contents > .container > li:nth-child(1) > .btn-primary:nth-child(2):hover {
-    background-color: #071b31;
+    background-color: #0e3663;
 }
 
 nav > .container > .right > .anchor > .bi-cart-fill {
@@ -136,7 +140,7 @@ nav > .container > .right > .search > .btn-primary {
 }
 
 nav > .container > .right > .search > .btn-primary:hover {
-    background-color: #071b31;
+    background-color: #0e3663;
 }
 
 nav > .container > .right > .search > .btn-primary > .bi-search {
@@ -500,6 +504,180 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     background-color: #f9f9f9;
 }
 
+/* signin and register*/
+.signin-page-contents {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    visibility: hidden;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-page-contents.active {
+    visibility: visible;
+}
+
+.signin-page-contents.active > .signin {
+    width: 370px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    animation: grow .4s ease 1 alternate forwards;
+}
+
+.signin-page-contents > .signin {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-page-contents > .signin > .top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.signin-page-contents > .signin > .top > h5 {
+    margin: 0 !important;
+    font-size: 15px;
+    color: #0A2647;
+}
+
+.signin-page-contents > .signin > .top > .close {
+    width: 16px;
+    height: 100%;
+    /* border: 1px solid #333; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.signin-page-contents > .signin > .top > .close > span {
+    display: block;
+    width: 100%;
+    height: 2.3px;
+    background-color: #6B728E;
+}
+
+.signin-page-contents > .signin > .top > .close > span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.signin-page-contents > .signin > .top > .close > span:nth-child(2) {
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(.4);
+    } 50% {
+        transform: scale(1);
+    } 70% {
+        transform: scale(.9);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+.signin-page-contents > .signin > form {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.signin-page-contents > .signin > form > input {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.signin-page-contents > .signin > form > input::placeholder,
+.signin-page-contents > .signin > form > .password-container > input::placeholder {
+    font-size: 14px;
+}
+
+.signin-page-contents > .signin > form > .password-container {
+    width: 100%;
+    display: flex;
+    height: 35px;
+}
+
+.signin-page-contents > .signin > form > .password-container > input {
+    flex: 1;
+    border-radius: 3px 0 0 3px;
+    box-shadow: none;
+}
+
+.signin-page-contents > .signin > form > .password-container > .displays-password {
+    width: 35px;
+    height: 100%;
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signin-page-contents > .signin > form > .password-container > .displays-password:hover {
+    background-color: #f9f9f9;
+}
+
+.signin-page-contents > .signin > form > .password-container > .displays-password .bi-eye-slash,
+.signin-page-contents > .signin > form > .password-container > .displays-password.active > .bi-eye {
+    display: block;
+}
+
+.signin-page-contents > .signin > form > .password-container > .displays-password.active .bi-eye-slash,
+.signin-page-contents > .signin > form > .password-container > .displays-password > .bi-eye {
+    display: none;
+}
+
+.signin-page-contents > .signin > form > .forget-password {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.signin-page-contents > .signin > form > .forget-password > .anchor {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.signin-page-contents > .signin > form > .btn-primary {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #0A2647;
+    background-color: #0A2647;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.signin-page-contents > .signin > form > .btn-primary:hover {
+    background-color: #0e3663;
+}
+
 /* footer */
 footer {
     border-top: .1px solid #ced4da;
@@ -621,6 +799,10 @@ footer > .container > .box:nth-child(4) > img {
         display: none;
     }
 
+    nav > .container > .right > .search {
+        flex: 1 !important;
+    }
+
     .menu-contents {
         padding: 20px 10px;
         width: 100%;
@@ -642,6 +824,14 @@ footer > .container > .box:nth-child(4) > img {
 
     .recommendation-contents > .product-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    body.active {
+        overflow: auto;
+    }
+
+    .signin-page-contents.active {
+        visibility: hidden;
     }
 
     footer > .container {

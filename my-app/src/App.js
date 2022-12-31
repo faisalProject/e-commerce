@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './component/Header';
 import Home from './pages/Home';
 import Menu from './component/Menu';
+import SigninPopup from './component/SigninPopup';
 import Footer from './component/Footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
       </Routes>
+      <SigninPopup />
       <Footer />
     </BrowserRouter>
   )
