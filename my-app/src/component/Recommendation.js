@@ -29,7 +29,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -155,7 +155,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -176,7 +176,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -218,7 +218,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
@@ -260,11 +260,15 @@ const Recommendation = () => {
                         <div className='rating'>
                             <i className="bi bi-star-fill"></i>
                             <div className='sold'>
-                                <p>4.7 |</p> <p>Terjual 100++</p>
+                                <p>4.7 | Terjual 100+</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='show-more-contents'>
+                <Link to='/' className='show-more-button'>Lihat Lainnya</Link>
             </div>
         </div>
     )
