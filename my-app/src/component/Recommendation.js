@@ -267,6 +267,7 @@ const Recommendation = () => {
                 </div>
             </div>
 
+            {/* show more */}
             <div className='show-more-contents'>
                 <Link to='/' className='show-more-button'>Lihat Lainnya</Link>
             </div>
