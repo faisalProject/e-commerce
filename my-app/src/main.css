@@ -27,7 +27,13 @@ nav > .container {
     gap: 20px;
 }
 
-nav > .container > img {
+nav > .container > .anchor {
+    display: flex;
+    /* border: 1px solid #333; */
+    height: 100%;
+}
+
+nav > .container > .anchor > img {
     height: 100%;
     /* border: 1px solid red; */
     margin: 0 !important;
@@ -90,6 +96,7 @@ nav > .container > .right > .button-container > .btn-primary:nth-child(1):hover,
 nav > .container > .right > .button-container > .btn-primary:nth-child(2) {
     background-color: #0A2647;
     border: 1px solid #0A2647;
+    text-decoration: none;
     border-radius: 3px;
     color: #fff;
     font-weight: 500;
@@ -625,7 +632,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     box-shadow: none;
 }
 
-.signin-page-contents > .signin > form > .password-container > .displays-password {
+.signin-page-contents > .signin > form > .password-container > .displays-password1 {
     width: 35px;
     height: 100%;
     border: 1px solid #ced4da;
@@ -637,17 +644,17 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     cursor: pointer;
 }
 
-.signin-page-contents > .signin > form > .password-container > .displays-password:hover {
+.signin-page-contents > .signin > form > .password-container > .displays-password1:hover {
     background-color: #f9f9f9;
 }
 
-.signin-page-contents > .signin > form > .password-container > .displays-password .bi-eye-slash,
-.signin-page-contents > .signin > form > .password-container > .displays-password.active > .bi-eye {
+.signin-page-contents > .signin > form > .password-container > .displays-password1 .bi-eye-slash,
+.signin-page-contents > .signin > form > .password-container > .displays-password1.active > .bi-eye {
     display: block;
 }
 
-.signin-page-contents > .signin > form > .password-container > .displays-password.active .bi-eye-slash,
-.signin-page-contents > .signin > form > .password-container > .displays-password > .bi-eye {
+.signin-page-contents > .signin > form > .password-container > .displays-password1.active .bi-eye-slash,
+.signin-page-contents > .signin > form > .password-container > .displays-password1 > .bi-eye {
     display: none;
 }
 
@@ -712,10 +719,11 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     align-items: center;
     gap: 10px;
     padding: 0 10px;
+    background-color: #fff;
 }
 
 .signin-page-contents > .signin > form > .google:hover {
-    background-color: #f9f9f9;
+    background-color: #f7f7f7 !important;
 }
 
 .signin-page-contents > .signin > form > .google > img {
@@ -759,6 +767,159 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     font-size: 12px;
     text-align: center;
     margin: 0 !important;
+}
+
+.register-contents {
+    min-height: 200px;
+    /* border: 1px solid #333; */
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.register-contents > .register {
+    width: 500px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.register-contents > .register > .top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;   
+}
+
+.register-contents > .register > .top > h5 {
+    font-size: 15px;
+    margin: 0 !important;
+    color: #0A2647;
+}
+
+.register-contents > .register > .desc {
+    width: 100%;
+    padding: 20px 20px 10px;
+    display: flex;
+}
+
+.register-contents > .register > .desc > p {
+    font-size: 12px;
+    color: #0A2647;
+    margin: 0 !important;
+}
+
+.register-contents > .register > form {
+    width: 100%;
+    min-height: 100px;
+    /* border: 1px solid #333; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 35px;
+    grid-auto-rows: 35px;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.register-contents > .register > form > input {
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.register-contents > .register > form > input::placeholder {
+    font-size: 14px;
+}
+
+.register-contents > .register > form > .password-container,
+.register-contents > .register > form > .confirm-password-container {
+    display: flex;
+}
+
+.register-contents > .register > form > .password-container > input,
+.register-contents > .register > form > .confirm-password-container > input {
+    flex: 1;
+    border-radius: 3px 0 0 3px;
+    box-shadow: none;
+}
+
+.register-contents > .register > form > .password-container > input::placeholder,
+.register-contents > .register > form > .confirm-password-container > input::placeholder {
+    font-size: 14px;
+}
+
+.register-contents > .register > form > .password-container > .displays-password2,
+.register-contents > .register > form > .confirm-password-container > .displays-password3 {
+    width: 35px;
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #ced4da;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.register-contents > .register > form > .password-container > .displays-password2 > .bi-eye-slash,
+.register-contents > .register > form > .confirm-password-container > .displays-password3 > .bi-eye-slash,
+.register-contents > .register > form > .password-container > .displays-password2.active > .bi-eye,
+.register-contents > .register > form > .confirm-password-container > .displays-password3.active > .bi-eye {
+    display: block;
+}
+
+.register-contents > .register > form > .password-container > .displays-password2.active > .bi-eye-slash,
+.register-contents > .register > form > .confirm-password-container > .displays-password3.active > .bi-eye-slash,
+.register-contents > .register > form > .password-container > .displays-password2 > .bi-eye,
+.register-contents > .register > form > .confirm-password-container > .displays-password3 > .bi-eye {
+    display: none;
+}
+
+.register-contents > .register > form > .btn-primary {
+    background-color: #0A2647;
+    border: 1px solid #0A2647;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-contents > .register > form > .btn-primary:hover {
+    background-color: #0e3663;
+}
+
+.register-contents > .register > form > .btn-primary:nth-child(8) {
+    display: none;
+}
+
+.register-contents > .register > .signin-option {
+    width: 100%;
+    padding: 0 20px 20px;
+    /* border: 1px solid #333; */
+    display: flex;
+    flex-direction: column;
+}
+
+.register-contents > .register > .signin-option > p {
+    margin: 0 !important;
+    font-size: 12px;
+    color: #0A2647;
+}
+
+.register-contents > .register > .signin-option > p > .anchor {
+    text-decoration: none;
+}
+
+.register-contents > .register > .signin-option > p:nth-child(2) {
+    display: none;
 }
 
 /* footer */
@@ -878,7 +1039,9 @@ footer > .container > .box:nth-child(4) > img {
 
 @media screen and (max-width: 576px) {
     nav > .container > .right > .anchor:nth-child(2),
-    nav > .container > .right > .anchor:nth-child(3) {
+    nav > .container > .right > .anchor:nth-child(3),
+    .register-contents > .register > form > .btn-primary:nth-child(7),
+    .register-contents > .register > .signin-option > p:nth-child(1) {
         display: none;
     }
 
@@ -892,7 +1055,8 @@ footer > .container > .box:nth-child(4) > img {
     }
 
     .menu-contents > .container > li:nth-child(7),
-    .menu-contents > .container > li:nth-child(8) {
+    .menu-contents > .container > li:nth-child(8),
+    .register-contents > .register > form > .btn-primary:nth-child(8) {
         display: flex;
     }
 
@@ -917,7 +1081,8 @@ footer > .container > .box:nth-child(4) > img {
         visibility: hidden;
     }
 
-    footer > .container {
+    footer > .container,
+    .register-contents > .register > form {
         grid-template-columns: 1fr;
     }
 
@@ -932,6 +1097,14 @@ footer > .container > .box:nth-child(4) > img {
 
     footer > .container > .box:nth-child(3) > .social-media {
         justify-content: center;
+    }
+
+    .register-contents > .register {
+        width: 100%;
+    }
+
+    .register-contents > .register > .signin-option > p:nth-child(2) {
+        display: block;
     }
     
 }

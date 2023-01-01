@@ -14,7 +14,9 @@ const Header = () => {
     return(
         <nav>
             <div className="container">
-                <img src={ecommerce} alt="" />
+                <Link to='/' className='anchor'>
+                    <img src={ecommerce} alt="" />
+                </Link>
                 <div className="right">
                     <div className='search'>
                         <input type="text" className='form-control' placeholder='Cari di E-Commerce'/>
@@ -28,7 +30,7 @@ const Header = () => {
                     </Link>
                     <div className="button-container">
                         <button type="submit" className="btn btn-primary" onClick={signinPopupActive}>Masuk</button>
-                        <button type="submit" className="btn btn-primary">Daftar</button>
+                        <Link to='/register' className='btn btn-primary'>Daftar</Link>
                     </div>
                     <div className="hamburger" onClick={menuActive}>
                         <span></span>
