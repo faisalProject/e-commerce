@@ -221,6 +221,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     border-radius: 3px;
     background-color: #0A2647;
     border: 1px solid #0A2647;
+    text-decoration: none;
     font-size: 14px;
     color: #fff;
     font-weight: 500;
@@ -920,6 +921,23 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
 
 .register-contents > .register > .signin-option > p:nth-child(2) {
     display: none;
+}
+
+.register-contents > .register > .bottom {
+    width: 100%;
+    min-height: 50px;
+    border-top: 1px solid #ced4da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.register-contents > .register > .bottom > p {
+    color: #0A2647;
+    font-size: 12px;
+    margin: 0 !important;
+    text-align: center;
 }
 
 /* footer */

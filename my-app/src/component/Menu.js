@@ -6,7 +6,7 @@ const Menu = () => {
             <ul className="container">
                 <li>
                     <button type="submit" className="btn btn-primary">Masuk</button>
-                    <button type="submit" className="btn btn-primary">Daftar</button>
+                    <Link to='/register' className="btn btn-primary">Daftar</Link>
                 </li>
                 <li className="title">Aktivitas Saya</li>
                 <li>
