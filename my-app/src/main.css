@@ -1158,6 +1158,20 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     color: #0A2647;
 }
 
+/* detail */
+.product-detail-contents {
+    width: 100%;
+    margin-top: 65px;
+    display: flex;
+}
+
+.product-detail-contents > .container {
+    min-height: 200px;
+    /* box-shadow: 0 0.2px 25px 0 rgb(180, 181, 183, .23); */
+    background-color: #fff;
+}
+
+
 /* footer */
 footer {
     border-top: .1px solid #ced4da;

@@ -16,7 +16,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -37,7 +37,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -58,7 +58,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -79,7 +79,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -100,7 +100,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -121,7 +121,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -142,7 +142,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -163,7 +163,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -184,7 +184,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -205,7 +205,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -226,7 +226,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
@@ -247,7 +247,7 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/' className='title'>
+                        <Link to='/product-detail' className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
                         </Link>
                         <p className='price'>Rp 150.000</p>
