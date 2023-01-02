@@ -206,6 +206,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     border-radius: 3px;
     background-color: #fff;
     border: 1px solid #0A2647;
+    text-decoration: none;
     font-size: 14px;
     color: #0A2647;
     font-weight: 500;
@@ -866,6 +867,12 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: #fff;
+}
+
+.register-contents > .register > form > .password-container > .displays-password2:hover,
+.register-contents > .register > form > .confirm-password-container > .displays-password3:hover {
+    background-color: #f9f9f9;
 }
 
 .register-contents > .register > form > .password-container > .displays-password2 > .bi-eye-slash,
@@ -938,6 +945,217 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     font-size: 12px;
     margin: 0 !important;
     text-align: center;
+}
+
+.signin-mobile-contents {
+    width: 100%;
+    display: flex;
+    margin-top: 65px;
+}
+
+.signin-mobile-contents > .container {
+    min-height: 100px;
+    /* border: 1px solid #333; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.signin-mobile-contents > .container > .signin-mobile {
+    width: 370px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > .top {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > .top > h5 {
+    font-size: 15px;
+    color: #0A2647;
+    margin: 0 !important;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > input {
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > input::placeholder,
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > input::placeholder {
+    font-size: 14px;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > input {
+    flex: 1;
+    border-radius: 3px 0 0 3px;
+    box-shadow: none;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4 {
+    width: 35px;
+    height: 100%;
+    border: 1px solid #ced4da;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4:hover {
+    background-color: #f9f9f9;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4 > .bi-eye-slash,
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4.active  > .bi-eye {
+    display: block;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4.active > .bi-eye-slash,
+.signin-mobile-contents > .container > .signin-mobile > form > .password-container-mobile > .displays-password4  > .bi-eye {
+    display: none;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .forget-password {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .forget-password > .anchor {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .btn-primary {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #0A2647;
+    background-color: #0A2647;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .btn-primary:hover {
+    background-color: #0e3663;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .option > span {
+    display: block;
+    flex: 1;
+    height: .1px;
+    background-color: #ced4da;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .option > p {
+    font-size: 13px;
+    color: #0A2647;
+    margin: 0 !important;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .google {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .google:hover {
+    background-color: #f7f7f7;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .google >  img {
+    height: 90%;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .google > p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0A2647;
+    margin: 0 !important;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .register-option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .register-option > p {
+    color: #0A2647;
+    font-size: 12px;
+    margin: 0 !important;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > form > .register-option > p > .anchor {
+    text-decoration: none;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > .bottom {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ced4da;
+}
+
+.signin-mobile-contents > .container > .signin-mobile > .bottom > p {
+    font-size: 12px;
+    margin: 0 !important;
+    text-align: center;
+    color: #0A2647;
 }
 
 /* footer */
@@ -1117,7 +1335,8 @@ footer > .container > .box:nth-child(4) > img {
         justify-content: center;
     }
 
-    .register-contents > .register {
+    .register-contents > .register,
+    .signin-mobile-contents > .container > .signin-mobile {
         width: 100%;
     }
 

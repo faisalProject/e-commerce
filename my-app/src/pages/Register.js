@@ -51,7 +51,7 @@ const Register = () => {
                 </form>
                 <div className="signin-option">
                     <p>Sudah mempunyai akun? <Link to='/register' className='anchor' onClick={signinPopupActive}>Masuk</Link></p>
-                    <p>Sudah mempunyai akun? <Link to='/register' className='anchor'>Masuk</Link></p>
+                    <p>Sudah mempunyai akun? <Link to='/signin' className='anchor'>Masuk</Link></p>
                 </div>
                 <div className='bottom'>
                     <p>Dengan melakukan registrasi, Anda setuju dengan syarat & ketentuan E-Commerce. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>

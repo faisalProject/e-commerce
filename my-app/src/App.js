@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Menu from './component/Menu';
 import SigninPopup from './component/SigninPopup';
 import Register from './pages/Register';
+import Signin from './pages/Signin';
 import Footer from './component/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/register' element={<Register />}></Route>
+        <Route path='/signin' element={<Signin />}></Route>
       </Routes>
       <SigninPopup />
       <Footer />
