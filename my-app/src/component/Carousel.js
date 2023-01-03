@@ -1,4 +1,4 @@
-import carouselImage from '../images/carousel-image2.jpg'
+import carouselImage from '../images/carousel-image3.png'
 
 const firstSlide = document.getElementsByClassName('first');
 const circles = document.getElementsByClassName('circle');

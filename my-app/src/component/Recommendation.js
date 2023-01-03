@@ -16,9 +16,9 @@ const Recommendation = () => {
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -33,13 +33,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -54,13 +55,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -75,13 +77,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -96,13 +99,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -117,13 +121,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -138,13 +143,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -159,13 +165,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -180,13 +187,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -201,13 +209,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -222,13 +231,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -243,13 +253,14 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
                 <div className="product">
                     <img src={shoes} alt="" />
                     <div className="desc">
-                        <Link to='/product-detail' className='title'>
+                        <p className='title'>
                             Sepatu Pria Causal Kulit Original Premium....
-                        </Link>
+                        </p>
                         <p className='price'>Rp 150.000</p>
                         <div className='discount-container'>
                             <div className='discount'>
@@ -264,6 +275,7 @@ const Recommendation = () => {
                             </div>
                         </div>
                     </div>
+                    <Link to='/product-detail' className='anchor'></Link>
                 </div>
             </div>
 
