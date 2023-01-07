@@ -1190,10 +1190,39 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
 
 .product-detail-contents > .container:nth-child(1) > .left {
     width: 300px;
-    min-height: 300px;
+    /* min-height: 300px; */
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 0.2px 2px 0 rgba(180, 181, 183, .1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.product-detail-contents > .container:nth-child(1) > .left > img {
+    width: 100%;
+    /* border: 1px solid #333; */
+    object-fit: cover;
+}
+
+.product-detail-contents > .container:nth-child(1) > .left > .product-option {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.product-detail-contents > .container:nth-child(1) > .left > .product-option > .item {
+    width: 25%;
+    /* border: 1px solid #333; */
+    display: flex;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.product-detail-contents > .container:nth-child(1) > .left > .product-option > .item > img {
+    width: 100%;
 }
 
 .product-detail-contents > .container:nth-child(1) > .right {
