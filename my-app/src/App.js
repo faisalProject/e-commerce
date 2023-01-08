@@ -12,14 +12,30 @@ import Signin from './pages/Signin';
 import Detail from './pages/Detail';
 import Footer from './component/Footer';
 
-function App() {
+const App = () => {
+
+  const menuActive = () => {
+    document.getElementsByClassName('menu-contents')[0].classList.toggle('active')
+  }
+
+  const signinPopupActive = () => {
+    document.getElementsByClassName('signin-page-contents')[0].classList.add('active');
+    document.querySelector('body').classList.add('active');
+  }
+
+  const hoverProduct = () => {
+      const activeProduct = document.getElementsByClassName('active-product')[0];
+      const productOption = document.getElementsByClassName('option')[1];
+      activeProduct.src = productOption.getAttribute('src')
+  }
+
   return(
     <BrowserRouter>
-      <Header />
+      <Header menuActive={menuActive} signinPopupActive={signinPopupActive}/>
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/product-detail' element={<Detail />}></Route>
+        <Route path='/product-detail' element={<Detail hoverProduct={hoverProduct} />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
       </Routes>

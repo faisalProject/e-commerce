@@ -1,16 +1,8 @@
 import ecommerce from '../images/e-commerce.png';
 import {Link} from 'react-router-dom';
 
-const menuActive = () => {
-    document.getElementsByClassName('menu-contents')[0].classList.toggle('active')
-}
 
-const signinPopupActive = () => {
-    document.getElementsByClassName('signin-page-contents')[0].classList.add('active');
-    document.querySelector('body').classList.add('active');
-}
-
-const Header = () => {
+const Header = (props) => {
     return(
         <nav>
             <div className="container">
@@ -29,10 +21,10 @@ const Header = () => {
                         <i className="bi bi-cart-fill"></i>
                     </Link>
                     <div className="button-container">
-                        <button type="submit" className="btn btn-primary" onClick={signinPopupActive}>Masuk</button>
+                        <button type="submit" className="btn btn-primary" onClick={() => props.signinPopupActive()}>Masuk</button>
                         <Link to='/register' className='btn btn-primary'>Daftar</Link>
                     </div>
-                    <div className="hamburger" onClick={menuActive}>
+                    <div className="hamburger" onClick={() => props.menuActive()}>
                         <span></span>
                         <span></span>
                         <span></span>
