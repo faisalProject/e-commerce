@@ -1197,6 +1197,7 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     flex-direction: column;
     gap: 10px;
     overflow: hidden;
+    /* border: 1px solid #333; */
 }
 
 .product-detail-contents > .container:nth-child(1) > .left > img {
@@ -1227,7 +1228,8 @@ nav > .container > .right > .search > .btn-primary > .bi-search {
     background-color: #fff;
 }
 
-.product-detail-contents > .container:nth-child(1) > .left > .product-option > .item:hover {
+.product-detail-contents > .container:nth-child(1) > .left > .product-option > .item > img:hover,
+.product-detail-contents > .container:nth-child(1) > .left > .product-option > .item > img.active-border {
     border: 2px solid #0A2647;
 }
 

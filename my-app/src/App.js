@@ -23,10 +23,18 @@ const App = () => {
     document.querySelector('body').classList.add('active');
   }
 
-  const hoverProduct = () => {
-      const activeProduct = document.getElementsByClassName('active-product')[0];
-      const productOption = document.getElementsByClassName('option')[1];
-      activeProduct.src = productOption.getAttribute('src')
+  const activeOption = () => {
+    const activeProduct = document.getElementsByClassName('active-product')[0];
+    const option = document.getElementsByClassName('a-1')[0];
+    const thumbs = document.getElementsByClassName('option');
+    option.addEventListener('click', (e) => {
+      if(e.target.className === 'option') {
+        activeProduct.src = e.target.src;
+        thumbs.forEach(thumb => {
+          thumb.className = 'option';
+        });
+      }
+    })
   }
 
   return(
@@ -35,7 +43,7 @@ const App = () => {
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/product-detail' element={<Detail hoverProduct={hoverProduct} />}></Route>
+        <Route path='/product-detail' element={<Detail activeOption={activeOption} />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
       </Routes>

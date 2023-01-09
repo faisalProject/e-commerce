@@ -28,7 +28,7 @@ const SigninPopup = () => {
             <div className="signin">
                 <div className="top">
                     <h5>Masuk</h5>
-                    <div className="close" onClick={signinPopupHidden}>
+                    <div className="close" onClick={() => signinPopupHidden()}>
                         <span></span>
                         <span></span>
                     </div>
@@ -37,7 +37,7 @@ const SigninPopup = () => {
                     <input type="text" className="form-control" placeholder="Email" />
                     <div className="password-container">
                         <input type="password" className="form-control password1-type" placeholder="Password" />
-                        <div className="displays-password1" onClick={displayPassword1}>
+                        <div className="displays-password1" onClick={() => displayPassword1()}>
                             <i className="bi bi-eye-slash"></i>
                             <i className="bi bi-eye"></i>
                         </div>
@@ -45,7 +45,7 @@ const SigninPopup = () => {
                     <div className="forget-password">
                         <Link to="/" className="anchor">Lupa Password?</Link>
                     </div>
-                    <button type="submit" className='btn btn-primary' onClick={successSignin}>Masuk</button>
+                    <button type="submit" className='btn btn-primary' onClick={() => successSignin()}>Masuk</button>
                     <div className='option'>
                         <span></span> 
                         <p>atau</p>   
