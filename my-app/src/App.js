@@ -30,9 +30,10 @@ const App = () => {
     option.addEventListener('click', (e) => {
       if(e.target.className === 'option') {
         activeProduct.src = e.target.src;
-        thumbs.forEach(thumb => {
-          thumb.className = 'option';
-        });
+        for (const thumb of thumbs) {
+          thumb.className = 'option'
+        }
+        e.target.classList.add('active-border');
       }
     })
   }
