@@ -38,13 +38,27 @@ const App = () => {
     })
   }
 
+  const showPlaces = () => {
+    document.getElementsByClassName('show-place')[0].classList.toggle('active');
+  }
+
+  const selectPlace = () => {
+    const selected = document.getElementsByClassName('selected')[0];
+    const places = document.getElementsByClassName('place-option');
+    for (const place of places) {
+      place.addEventListener('click', () => {
+        selected.innerHTML = place.innerHTML;
+      })
+    }
+  }
+
   return(
     <BrowserRouter>
       <Header menuActive={menuActive} signinPopupActive={signinPopupActive}/>
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/product-detail' element={<Detail activeOption={activeOption} />}></Route>
+        <Route path='/product-detail' element={<Detail activeOption={activeOption} showPlaces={showPlaces} selectPlace={selectPlace} />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
       </Routes>

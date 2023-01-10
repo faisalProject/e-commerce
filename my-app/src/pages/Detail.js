@@ -58,26 +58,37 @@ const Detail = (props) => {
                             </div>
                             <div className='item'>
                                 <div className="box">
-                                    <p>Pengiriman ke</p>
+                                    <div className='a-2'>
+                                        <p>Pengiriman ke</p>
+                                    </div>
+                                    <div className='a-2'>
+                                        <p>Ongkos kirim</p>
+                                    </div>
                                 </div>
                                 <div className="box">
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Kota Jakarta Pusat</option>
-                                    <option value="1">Kota Bandung</option>
-                                    <option value="2">Kota Surabaya</option>
-                                    <option value="3">Kota Semarang</option>
-                                </select>
-                                </div>
-                                <div className="box">
-                                    <p>Ongkos kirim</p>
-                                </div>
-                                <div className="box">
-                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                    <option selected>Rp 0</option>
-                                    <option value="1">Rp 5.000</option>
-                                    <option value="2">Rp 10.000</option>
-                                    <option value="3">Rp 15.000</option>
-                                </select>
+                                    <div className='a-2'>
+                                        <div className='a-3 show-place' onClick={() => props.showPlaces()}>
+                                            <p className='selected'>Kota Jakarta Pusat</p> 
+                                            <i className="bi bi-chevron-down"></i>
+                                        </div>
+                                        <ul className='a-4'>
+                                            <li className='place-list'>
+                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Bandung</p>
+                                            </li>
+                                            <li className='place-list'>
+                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Semarang</p>
+                                            </li>
+                                            <li className='place-list'>
+                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Medan</p>
+                                            </li>
+                                            <li className='place-list'>
+                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Yogyakarta</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className='a-2'>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
