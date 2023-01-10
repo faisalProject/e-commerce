@@ -7,20 +7,20 @@ const Detail = (props) => {
     return(
         <div className="product-detail-contents">
             <div className="container">
-                <div className="left a-1">
+                <div className="left a-1" onClick={() => props.activeOption()}>
                     <img src={shoes} alt="" className="active-product" />
                     <div className='product-option'>
                         <div className='item'>
-                            <img src={shoes} alt="" className="option" onClick={() => props.activeOption()} />
+                            <img src={shoes} alt="" className="option" />
                         </div>
                         <div className='item'>
-                            <img src={shoesOption1} alt="" className="option" onClick={() => props.activeOption()} />
+                            <img src={shoesOption1} alt="" className="option" />
                         </div>
                         <div className='item'>
-                            <img src={shoesOption2} alt="" className="option" onClick={() => props.activeOption()} />
+                            <img src={shoesOption2} alt="" className="option" />
                         </div>
                         <div className='item'>
-                            <img src={shoesOption3} alt="" className="option" onClick={() => props.activeOption()} />
+                            <img src={shoesOption3} alt="" className="option" />
                         </div>
                         <button className="prev-button">
                             <i className="bi bi-chevron-left"></i>
@@ -71,25 +71,36 @@ const Detail = (props) => {
                                             <p className='selected'>Kota Jakarta Pusat</p> 
                                             <i className="bi bi-chevron-down"></i>
                                         </div>
-                                        <ul className='a-4'>
-                                            <li className='place-list'>
-                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Bandung</p>
-                                            </li>
-                                            <li className='place-list'>
-                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Semarang</p>
-                                            </li>
-                                            <li className='place-list'>
-                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Medan</p>
-                                            </li>
-                                            <li className='place-list'>
-                                                <p className='place-option' onClick={() => props.selectPlace()}>Kota Yogyakarta</p>
-                                            </li>
+                                        <ul className='a-4' onClick={() => props.selectPlace()}>
+                                            <li className='place-list'>Kota Jakarta Pusat</li>
+                                            <li className='place-list'>Kota Bandung</li>
+                                            <li className='place-list'>Kota Yogyakarta</li>
+                                            <li className='place-list'>Kota Semarang</li>
                                         </ul>
                                     </div>
                                     <div className='a-2'>
-
+                                        <p>Rp 15.000</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div className='colors-container'>
+                            <div className='item'>
+                                <div className='box'>
+                                    <p>Warna</p>
+                                </div>
+                            </div>
+                            <div className='item'>
+                                {/* <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div>
+                                <div className='color'></div> */}
                             </div>
                         </div>
                     </div>

@@ -44,12 +44,12 @@ const App = () => {
 
   const selectPlace = () => {
     const selected = document.getElementsByClassName('selected')[0];
-    const places = document.getElementsByClassName('place-option');
-    for (const place of places) {
-      place.addEventListener('click', () => {
-        selected.innerHTML = place.innerHTML;
-      })
-    }
+    const places = document.getElementsByClassName('a-4')[0];
+    places.addEventListener('click', (e) => {
+      if(e.target.className === 'place-list') {
+        selected.innerHTML = e.target.innerHTML;
+      }
+    })
   }
 
   return(
