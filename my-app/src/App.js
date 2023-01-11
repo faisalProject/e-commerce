@@ -23,31 +23,17 @@ const App = () => {
     document.querySelector('body').classList.add('active');
   }
 
-  const activeOption = () => {
-    const activeProduct = document.getElementsByClassName('active-product')[0];
-    const option = document.getElementsByClassName('a-1')[0];
-    const thumbs = document.getElementsByClassName('option');
-    option.addEventListener('click', (e) => {
-      if(e.target.className === 'option') {
-        activeProduct.src = e.target.src;
-        for (const thumb of thumbs) {
-          thumb.className = 'option'
-        }
-        e.target.classList.add('active-border');
-      }
-    })
-  }
-
-  const showPlaces = () => {
-    document.getElementsByClassName('show-place')[0].classList.toggle('active');
-  }
-
-  const selectPlace = () => {
+  const eventProductOption = () => {
+    const selectedProduct = document.getElementsByClassName('selected-product')[0];
     const selected = document.getElementsByClassName('selected')[0];
-    const places = document.getElementsByClassName('a-4')[0];
-    places.addEventListener('click', (e) => {
-      if(e.target.className === 'place-list') {
-        selected.innerHTML = e.target.innerHTML;
+    const productImage = document.getElementsByClassName('product-image');
+    selectedProduct.addEventListener('click', (e) => {
+      if(e.target.className === 'product-image') {
+        selected.src = e.target.src;
+        for (const i of productImage) {
+          i.className = 'product-image'
+        }
+        e.target.classList.add('active');
       }
     })
   }
@@ -58,7 +44,7 @@ const App = () => {
       <Menu />
       <Routes>
         <Route path='/' element={<Home />}></Route>
-        <Route path='/product-detail' element={<Detail activeOption={activeOption} showPlaces={showPlaces} selectPlace={selectPlace} />}></Route>
+        <Route path='/product-detail' element={<Detail eventProductOption={eventProductOption} />}></Route>
         <Route path='/register' element={<Register />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
       </Routes>
